@@ -29,11 +29,11 @@ if (isset($_SESSION['user_id'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Správce úkolů</title>
+    <title>fr jen tak pokus</title>
 </head>
 <body>
 
-<h1>Správce úkolů</h1>
+<h1>pokus jedna :D </h1>
 
 <?php if (isset($_SESSION['user_id'])): ?>
     <p>Přihlášen jako: <strong><?php echo htmlspecialchars($username); ?></strong></p>
@@ -43,8 +43,6 @@ if (isset($_SESSION['user_id'])) {
     <?php while ($row = $result->fetch_assoc()): ?>
         <li>
             <strong><?php echo htmlspecialchars($row['title']); ?></strong> - <?php echo htmlspecialchars($row['status']); ?>
-            <a href="edit_task.php?id=<?php echo $row['id']; ?>">Editovat</a>
-            <a href="delete_task.php?id=<?php echo $row['id']; ?>">Smazat</a>
         </li>
     <?php endwhile; ?>
     </ul>
@@ -52,7 +50,7 @@ if (isset($_SESSION['user_id'])) {
     <a href="logout.php">Odhlásit se</a>
 
 <?php else: ?>
-    <p>Chcete-li pokračovat, přihlaste se nebo se zaregistrujte:</p>
+    <p></p>
     <a href="login.php">Přihlásit se</a>
     <br>
     <a href="register.php">Registrovat</a>
