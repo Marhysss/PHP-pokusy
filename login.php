@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         header('Location: index.php');
         exit;
     } else {
-        echo "Nesprávné heslo.";
+        echo "Tak si kokot??";
     }
 
     $stmt->close();
